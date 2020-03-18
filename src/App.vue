@@ -13,6 +13,7 @@
 //     // HelloWorld
 //   }
 // }
+
 </script>
 
 <style>
@@ -26,5 +27,12 @@
 * {
   padding: 0; /*清除内边距*/
   margin: 0; /*清除外边距*/
+}
+
+body {
+  /* IOS禁止微信调整字体大小 */
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
 }
 </style>

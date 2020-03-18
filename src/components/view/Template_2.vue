@@ -43,7 +43,7 @@ export default {
 .temp2 .item .text {
   width: 104px;
   text-align: center;
-  font-size: 28px;
+  font-size: 28px;/*px*/
   margin-top: 22px;
 }
 </style>

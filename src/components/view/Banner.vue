@@ -60,5 +60,6 @@ export default {
   min-height: 340px;
   min-width: 100%;
   border-radius: 5px;
+  background-color: blue;
 }
 </style>
