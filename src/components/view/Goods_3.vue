@@ -1,4 +1,6 @@
+// 横向排列商品
 <template>
+
   <div class="goods3">
     <div class="goods-img"></div>
     <div class="goods-text">

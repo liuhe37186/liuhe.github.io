@@ -12,6 +12,9 @@
     <template11 :items="template11Item"></template11>
     <template12 :items="template12Item"></template12>
     <template13 :items="template13Item"></template13>
+    <template14 :items="template14Item"></template14>
+    <template15 :items="template15Item"></template15>
+    <template16 :items="template16Item"></template16>
   </div>
 </template>
 
@@ -27,6 +30,9 @@ import template10 from "./Template_10";
 import template11 from "./Template_11";
 import template12 from "./Template_12";
 import template13 from "./Template_13";
+import template14 from "./Template_14";
+import template15 from "./Template_15";
+import template16 from "./Template_16";
 export default {
   name: "home",
   components: {
@@ -41,6 +47,9 @@ export default {
     template11,
     template12,
     template13,
+    template14,
+    template15,
+    template16,
   },
 
   data() {
@@ -89,6 +98,15 @@ export default {
       ],
       template13Item:[
         {id:1}
+      ],
+       template14Item:[
+        {id:1},{id:2},{id:3},{id:4}
+      ],
+      template15Item:[
+        {id:1},{id:2},{id:3},{id:4},{id:5}
+      ],
+      template16Item:[
+        {id:1},{id:2},{id:3},{id:4},{id:5}
       ],
     };
   }
