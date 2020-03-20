@@ -1,10 +1,14 @@
 <template>
-  <div class="temp7">
-    <!-- <img :src="items[0].opsPic"/> -->
-    <div class="top" @click="itemClick(items[0])"></div>
-    <div class="bottom">
-      <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-        <div class="image"></div>
+  <div>
+    <div>temp7</div>
+
+    <div class="temp7">
+      <!-- <img :src="items[0].opsPic"/> -->
+      <div class="top" @click="itemClick(items[0])"></div>
+      <div class="bottom">
+        <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
+          <div class="image"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -38,7 +42,7 @@ export default {
   margin: 15px;
   background-color: blue;
 }
-.temp7 .bottom{
+.temp7 .bottom {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

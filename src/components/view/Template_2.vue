@@ -1,10 +1,15 @@
 <template>
-  <div class="temp2">
+  <div>
+    <div>temp2</div>
+    <div class="temp2">
     <div class="item" v-for="item in items" :key="item.id" @click="itemClick(item)">
       <div class="image"></div>
       <div class="text">icon {{item.id}}</div>
     </div>
   </div>
+
+  </div>
+  
 </template>
 
 <script>

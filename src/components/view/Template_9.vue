@@ -1,10 +1,14 @@
 <template>
-  <div class="temp6">
-    <!-- <img :src="items[0].opsPic"/> -->
-    <div class="top" @click="itemClick(items[0])"></div>
-    <div class="bottom">
-      <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-        <div class="image"></div>
+  <div>
+    <div>temp9</div>
+
+    <div class="temp9">
+      <!-- <img :src="items[0].opsPic"/> -->
+      <div class="left" @click="itemClick(items[0])"></div>
+      <div class="right">
+        <div class="item" v-for="item in rightItem" :key="item.id" @click="itemClick(item)">
+          <div class="image"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -12,44 +16,49 @@
 
 <script>
 export default {
-  name: "template_6",
+  name: "template_9",
   props: ["items"],
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      rightItem: this.items.splice(1)
     };
   },
   methods: {
     itemClick(item) {
-      console.log("点击 temp6 Item", item.id);
+      console.log("点击 temp9 Item", item.id);
     }
   }
 };
 </script>
 
 <style>
-.temp6 {
+.temp9 {
   width: 100%;
-  margin-top: 10px;
-}
-.temp6 .top {
-  width: 720px;
-  height: 206px;
-  margin: 15px;
-  background-color: blue;
-}
-.temp6 .bottom{
+  /* margin-top: 1px; */
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
-.temp6 .item {
+.temp9 .left {
+  width: 405px;
+  height: 505px;
+  /* margin: 15px; */
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: blue;
+}
+.temp9 .right {
+  /* display: inline; */
+  display: flex;
+  flex-direction: column;
+}
+.temp9 .item {
   margin-top: 0px;
 }
-.temp6 .item .image {
-  width: 352.5px;
-  height: 170px;
+.temp9 .item .image {
+  width: 300px;
+  height: 245px;
   background-color: red;
   margin-left: 15px;
+  margin-top: 15px;
 }
 </style>

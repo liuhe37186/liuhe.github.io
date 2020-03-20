@@ -1,8 +1,11 @@
 <template>
-  <div class="temp3">
-    <div class="item" v-for="item in items" :key="item.id" @click="itemClick(item)">
-      <div class="image"></div>
-      <div class="text">icon {{item.id}}</div>
+  <div>
+    <div>temp3</div>
+    <div class="temp3">
+      <div class="item" v-for="item in items" :key="item.id" @click="itemClick(item)">
+        <div class="image"></div>
+        <div class="text">icon {{item.id}}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -11,10 +14,10 @@
 export default {
   name: "template_3",
   props: ["items"],
-  methods:{
-      itemClick(item){
-          console.log("点击 temp3 Item", item.id);
-      }
+  methods: {
+    itemClick(item) {
+      console.log("点击 temp3 Item", item.id);
+    }
   }
 };
 </script>

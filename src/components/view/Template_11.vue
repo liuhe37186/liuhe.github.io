@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div>temp6</div>
-    <div class="temp6">
-      <!-- <img :src="items[0].opsPic"/> -->
+    <div>temp11</div>
+    <div class="temp11">
       <div class="top" @click="itemClick(items[0])"></div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-          <div class="image"></div>
+          <goods1 :goods="item"></goods1>
+          <!-- <div class="image">{{item.id}}</div> -->
         </div>
       </div>
     </div>
@@ -14,9 +14,12 @@
 </template>
 
 <script>
+import goods1 from "./Goods_1";
+
 export default {
-  name: "template_6",
+  name: "template_10",
   props: ["items"],
+  components: { goods1 },
   data() {
     return {
       bottomItem: this.items.splice(1)
@@ -24,35 +27,30 @@ export default {
   },
   methods: {
     itemClick(item) {
-      console.log("点击 temp6 Item", item.id);
+      console.log("点击 temp11 Item", item.id);
     }
   }
 };
 </script>
 
 <style>
-.temp6 {
+.temp11 {
   width: 100%;
-  margin-top: 10px;
 }
-.temp6 .top {
+.temp11 .top {
   width: 720px;
   height: 206px;
   margin: 15px;
-  background-color: green;
+  background-color: blue;
 }
-.temp6 .bottom {
+.temp11 .bottom {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.temp6 .item {
+.temp11 .bottom .item {
   margin-top: 0px;
-}
-.temp6 .item .image {
   width: 352.5px;
-  height: 170px;
-  background-color: red;
   margin-left: 15px;
 }
 </style>
