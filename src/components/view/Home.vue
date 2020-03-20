@@ -48,13 +48,16 @@ export default {
       bannerItem: [
         {
           opsPic:
-            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/conline-test/banner.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584699562421&di=b73df66f4a735d535f34d46ef43f1835&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01554f59a3d3cda8012028a9901540.jpg%401280w_1l_2o_100sh.jpg",
           id: 1
         },
         {
           opsPic:
-            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/online-customer/1581478851959758.png",
+            "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2424569854,325583504&fm=26&gp=0.jpg",
           id: 2
+        },{
+          opsPic:"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4047717572,2067067998&fm=26&gp=0.jpg",
+          id: 3
         }
       ],
       template2Item:[
