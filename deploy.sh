@@ -17,7 +17,7 @@ git add -A
 git commit -m '部署测试'
 
 # 部署到 https://<USERNAME>.github.io
-git push -f git@github.com:liuhe37186/liuhe.github.io.git master
+git push -f git@github.com:liuhe37186/liuhe37186.github.io.git master
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f https://github.com/xjinky/hello-world.git master:gh-pages  # 提交到gh-master分支
