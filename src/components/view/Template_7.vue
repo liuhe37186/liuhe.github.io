@@ -4,7 +4,9 @@
 
     <div class="temp7">
       <!-- <img :src="items[0].opsPic"/> -->
-      <div class="top" @click="itemClick(items[0])"></div>
+      <div class="top" @click="itemClick(items[0])">
+        <div class="image"></div>
+      </div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
           <div class="image"></div>
@@ -37,12 +39,16 @@ export default {
   margin-top: 10px;
 }
 .temp7 .top {
-  width: 720px;
   height: 206px;
-  margin: 15px;
+  padding: 15px;
+}
+.temp7 .top .image{
+  width: 100%;
+  height: 100%;
   background-color: blue;
 }
 .temp7 .bottom {
+  height: 230px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

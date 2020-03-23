@@ -1,9 +1,11 @@
 <template>
   <div>
-    <div>temp6</div>
+    <div>----temp6----</div>
     <div class="temp6">
       <!-- <img :src="items[0].opsPic"/> -->
-      <div class="top" @click="itemClick(items[0])"></div>
+      <div class="top" @click="itemClick(items[0])">
+        <div class="image"></div>
+      </div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
           <div class="image"></div>
@@ -32,14 +34,17 @@ export default {
 
 <style>
 .temp6 {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 10px;
 }
 .temp6 .top {
-  width: 720px;
   height: 206px;
-  margin: 15px;
-  background-color: green;
+  padding: 15px;
+}
+.temp6 .top .image{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
 }
 .temp6 .bottom {
   display: flex;

@@ -14,10 +14,10 @@ cd dist
 
 git init
 git add -A
-git commit -m '部署测试'
+git commit -m '部署page'
 
 # 部署到 https://<USERNAME>.github.io
-git push -f git@github.com:liuhe37186/liuhe37186.github.io.git master
+git push -f https://github.com/liuhe37186/vue-demo.git master:gh-pages
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f https://github.com/xjinky/hello-world.git master:gh-pages  # 提交到gh-master分支

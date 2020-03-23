@@ -53,6 +53,7 @@ export default {
 .banner {
   height: 340px;
   padding: 15px;
+  background-color: green;
 }
 .banner img {
   width: 100%;

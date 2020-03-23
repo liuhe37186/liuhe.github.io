@@ -2,7 +2,9 @@
   <div>
     <div>temp10</div>
     <div class="temp10">
-      <div class="top" @click="itemClick(items[0])"></div>
+      <div class="top" @click="itemClick(items[0])">
+        <div class="image"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -26,12 +28,15 @@ export default {
 
 <style>
 .temp10 {
-  width: 100%;
+  /* width: 100%; */
 }
 .temp10 .top {
-  width: 720px;
   height: 206px;
-  margin: 15px;
+  padding: 15px;
+}
+.temp10 .top .image{
+  width: 100%;
+  height: 206px;
   background-color: brown;
 }
 </style>

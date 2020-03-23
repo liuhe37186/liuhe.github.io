@@ -2,7 +2,9 @@
   <div>
     <div>temp11</div>
     <div class="temp11">
-      <div class="top" @click="itemClick(items[0])"></div>
+      <div class="top" @click="itemClick(items[0])">
+        <div class="image"></div>
+      </div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
           <goods1 :goods="item"></goods1>
@@ -38,9 +40,14 @@ export default {
   width: 100%;
 }
 .temp11 .top {
-  width: 720px;
   height: 206px;
-  margin: 15px;
+  padding: 15px;
+  
+}
+
+.temp11 .top .image{
+  width: 100%;
+  height: 206px;
   background-color: blue;
 }
 .temp11 .bottom {
