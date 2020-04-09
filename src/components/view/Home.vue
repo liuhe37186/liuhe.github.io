@@ -1,9 +1,13 @@
 <template>
   <div class="home">
     <!-- <h1>这是title</h1> -->
-    <banner :items="bannerItem"></banner>
-    <template2 :items="template2Item"></template2>
-    <template3 :items="template3Item"></template3>
+    <div v-for="item in list" :key="item.template_id+item.slot_name+item.slot_id">
+      <!-- {{item.slot_id}} -->
+      <banner v-if="item.template_id == 1" :items="item"></banner>
+      <template2 v-if="item.template_id == 2" :items="item"></template2>
+      <template3 v-if="item.template_id == 3" :items="item"></template3>
+    </div>
+
     <template6 :items="template6Item"></template6>
     <template7 :items="template7Item"></template7>
     <template8 :items="template8Item"></template8>
@@ -15,6 +19,7 @@
     <template14 :items="template14Item"></template14>
     <template15 :items="template15Item"></template15>
     <template16 :items="template16Item"></template16>
+    <template17 :items="template17Item"></template17>
   </div>
 </template>
 
@@ -33,6 +38,7 @@ import template13 from "./Template_13";
 import template14 from "./Template_14";
 import template15 from "./Template_15";
 import template16 from "./Template_16";
+import template17 from "./Template_17";
 export default {
   name: "home",
   components: {
@@ -50,10 +56,208 @@ export default {
     template14,
     template15,
     template16,
+    template17
   },
 
   data() {
     return {
+      list: [
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 1,
+          sort: 1,
+          login_mode: true,
+          slot_name: "测试运营位",
+          type: true,
+          link_h5: "ds",
+          title_mode: 0
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "精选课程",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "老人风采",
+              id: 11,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "精彩资讯",
+              id: 12,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 17,
+          link_mp: "d",
+          template_id: 2,
+          sort: 1,
+          login_mode: true,
+          slot_name: "icon每行4个",
+          type: true,
+          link_h5: "ds",
+          title_mode: 1
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 13,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 18,
+          link_mp: "d",
+          template_id: 3,
+          sort: 1,
+          login_mode: true,
+          slot_name: "icon每行5个",
+          type: true,
+          link_h5: "ds",
+          title_mode: 2
+        }
+      ],
       bannerItem: [
         {
           opsPic:
@@ -62,60 +266,52 @@ export default {
         },
         {
           opsPic:
-            "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2424569854,325583504&fm=26&gp=0.jpg",
+            "http://img0.imgtn.bdimg.com/it/u=2424569854,325583504&fm=26&gp=0.jpg",
           id: 2
-        },{
-          opsPic:"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4047717572,2067067998&fm=26&gp=0.jpg",
+        },
+        {
+          opsPic:
+            "http://img1.imgtn.bdimg.com/it/u=3661153975,2974630288&fm=26&gp=0.jpg",
           id: 3
         }
       ],
-      template2Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5}
+      template2Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      template3Item: [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 },
+        { id: 4 },
+        { id: 5 },
+        { id: 6 },
+        { id: 7 }
       ],
-      template3Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7}
+      template6Item: [{ id: 1 }, { id: 2 }, { id: 3 }],
+      template7Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+      template8Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      template9Item: [{ id: 1 }, { id: 2 }, { id: 3 }],
+      template10Item: [{ id: 1 }],
+      template11Item: [{ id: 1 }, { id: 2 }, { id: 3 }],
+      template12Item: [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 },
+        { id: 4 },
+        { id: 5 },
+        { id: 6 },
+        { id: 7 }
       ],
-      template6Item:[
-        {id:1},{id:2},{id:3}
-      ],
-      template7Item:[
-        {id:1},{id:2},{id:3},{id:4}
-      ],
-      template8Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5}
-      ],
-      template9Item:[
-        {id:1},{id:2},{id:3}
-      ],
-      template10Item:[
-        {id:1}
-      ],
-      template11Item:[
-        {id:1},{id:2},{id:3}
-      ],
-      template12Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7}
-      ],
-      template13Item:[
-        {id:1}
-      ],
-       template14Item:[
-        {id:1},{id:2},{id:3},{id:4}
-      ],
-      template15Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5}
-      ],
-      template16Item:[
-        {id:1},{id:2},{id:3},{id:4},{id:5}
-      ],
+      template13Item: [{ id: 1 }],
+      template14Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+      template15Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      template16Item: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      template17Item: [{ id: 1 }, { id: 2 }, { id: 3 }]
     };
   }
 };
 </script>
 
 <style>
-
-.home{
+.home {
   padding: 40px 0;
 }
 </style>

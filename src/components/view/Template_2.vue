@@ -1,10 +1,14 @@
 <template>
   <div>
-    <div>---temp2---</div>
+    <div>
+      <img v-if="items.title_mode == 1" class="title-image" :src="items.image">
+      <div v-else-if="items.title_mode == 2" class="title">{{items.slot_name}}</div>
+    </div>
+    
     <div class="temp2">
-    <div class="item" v-for="item in items" :key="item.id" @click="itemClick(item)">
-      <div class="image"></div>
-      <div class="text">icon {{item.id}}</div>
+    <div class="item" v-for="item in items.data" :key="item.id" @click="itemClick(item)">
+      <img class="image" :src="item.image"/>
+      <div class="text">{{item.name}}</div>
     </div>
   </div>
 
@@ -25,6 +29,15 @@ export default {
 </script>
 
 <style>
+.title-image{
+  height: 50px;
+  width: 100%;
+}
+.title{
+  margin-top: 20px;
+  height: 40px;
+  background-color: grey;
+}
 .temp2 {
   width: 100%;
   margin-top: 10px;
@@ -36,17 +49,20 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 66.8px;
+  width: 187.5px;
+  /* margin-left: 66.8px; */
+
   margin-top: 20px;
 }
 .temp2 .item .image {
   width: 104px;
   height: 104px;
-  background-color: red;
-  border-radius: 52px;
+  /* margin-left: 66.8px; */
+  /* background-color: red; */
+  /* border-radius: 52px; */
 }
 .temp2 .item .text {
-  width: 104px;
+  /* width: 104px; */
   text-align: center;
   font-size: 28px;/*px*/
   margin-top: 22px;

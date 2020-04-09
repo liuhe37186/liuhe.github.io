@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import RouterFile from '@/file/Router.md'; 
 
 Vue.use(Router);
 
@@ -16,7 +17,12 @@ export default new Router({
         {
             path:'/home',
             component: resolve => require(['../components/view/Home.vue'], resolve),
-        }
+        },
+        {
+            path: '/router',
+            name: 'Router',
+            component: RouterFile,
+          },
 
     ]
 })

@@ -3,7 +3,7 @@
     <swiper :options="options">
       <swiper-slide v-for="item in bannerItem" :key="item.id">
         <div @click="bannerClick(item)">
-          <img :src="item.opsPic" alt />
+          <img :src="item.image" alt />
           <!-- <div>{{item.visitUrl}}</div> -->
         </div>
       </swiper-slide>
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      bannerItem: this.items,
+      bannerItem: this.items.data,
       //swiper的配置参数
       options: {
         //自动滚动
@@ -53,14 +53,14 @@ export default {
 .banner {
   height: 340px;
   padding: 15px;
-  background-color: green;
+  background-color: white;
 }
 .banner img {
   width: 100%;
   height: 340px;
   min-height: 340px;
   min-width: 100%;
-  border-radius: 5px;
-  background-color: blue;
+  /* border-radius: 5px; */
+  /* background-color: blue; */
 }
 </style>

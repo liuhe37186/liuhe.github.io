@@ -19,7 +19,7 @@ export default {
   components: { goods3 },
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      item: this.items
     };
   },
   methods: {

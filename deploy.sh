@@ -23,5 +23,7 @@ git push -f https://github.com/liuhe37186/vue-demo.git master:gh-pages
 # git push -f https://github.com/xjinky/hello-world.git master:gh-pages  # 提交到gh-master分支
 
 # git push -f https://github.com/liuhe37186/vue-demo.git master    # 提交到master分支
-
+echo '打开网页' 
+echo 'https://liuhe37186.github.io/vue-demo'
+open -a "/Applications/Google Chrome.app" https://liuhe37186.github.io/vue-demo
 cd -
