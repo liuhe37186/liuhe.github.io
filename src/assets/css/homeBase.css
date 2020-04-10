@@ -1,0 +1,11 @@
+.home-title-image {
+    height: 50px;
+    width: 100%;
+}
+
+.home-title-text {
+    margin-top: 20px;
+    height: 40px;
+    background-color: red;
+    color: blue;
+}

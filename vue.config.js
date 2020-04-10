@@ -1,6 +1,9 @@
 
 module.exports = {
     publicPath: process.env.NODE_ENV === "production" ? "/vue-demo" : "/",
+    // css: {
+    //   requireModuleExtension: false
+    // },
     chainWebpack: (config) => {
         config.module
         .rule('css')
@@ -14,6 +17,7 @@ module.exports = {
         })
     },
     configureWebpack: config => {
+     
         config.module.rules.push({
           // 处理markdown文件
           test: /\.md$/,
@@ -27,5 +31,12 @@ module.exports = {
           ],
         },
         );
-      }
+      },
+    // configureWebpack:{
+    //     resolve:{
+    //       alias:{
+    //         "assets":"@/assets",
+    //       }
+    //     }
+    //   }
 }

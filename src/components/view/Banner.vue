@@ -1,14 +1,17 @@
 <template>
   <div class="banner">
-    <swiper :options="options">
-      <swiper-slide v-for="item in bannerItem" :key="item.id">
-        <div @click="bannerClick(item)">
-          <img :src="item.image" alt />
-          <!-- <div>{{item.visitUrl}}</div> -->
-        </div>
-      </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
-    </swiper>
+    <operationTitle :items="items"></operationTitle>
+    <div class="image-container">
+      <swiper :options="options">
+        <swiper-slide v-for="(item,index) in bannerItem" :key="index">
+          <div @click="bannerClick(item)">
+            <img :src="item.image" class="banner-image" />
+            <!-- <div>{{item.visitUrl}}</div> -->
+          </div>
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+    </div>
   </div>
 </template>
 
@@ -20,7 +23,8 @@ export default {
   props: ["items"], //获取传递进来的数据
   components: {
     swiper,
-    swiperSlide
+    swiperSlide,
+    // operationTitle
   },
   data() {
     return {
@@ -49,16 +53,18 @@ export default {
 };
 </script>
 
-<style >
-.banner {
-  height: 340px;
-  padding: 15px;
+<style>
+/* .banner { */
+  /* height: 300px; */
+/* } */
+.banner .image-container {
+  padding: 20px;
   background-color: white;
 }
-.banner img {
+.banner .banner-image {
   width: 100%;
-  height: 340px;
-  min-height: 340px;
+  height: 300px;
+  min-height: 300px;
   min-width: 100%;
   /* border-radius: 5px; */
   /* background-color: blue; */

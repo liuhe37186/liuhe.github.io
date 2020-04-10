@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div>----temp6----</div>
+    <operationTitle :items="items"></operationTitle>
     <div class="temp6">
       <!-- <img :src="items[0].opsPic"/> -->
-      <div class="top" @click="itemClick(items[0])">
-        <div class="image"></div>
+      <div class="top" @click="itemClick(items.data[0])">
+        <img class="image" :src="items.data[0].image"/>
       </div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-          <div class="image"></div>
+          <img class="image" :src="item.image"/>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@ export default {
   props: ["items"],
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      bottomItem: this.items.data.splice(1,2)
     };
   },
   methods: {

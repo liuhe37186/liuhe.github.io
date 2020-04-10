@@ -6,9 +6,20 @@
       <banner v-if="item.template_id == 1" :items="item"></banner>
       <template2 v-if="item.template_id == 2" :items="item"></template2>
       <template3 v-if="item.template_id == 3" :items="item"></template3>
+      <template6 v-if="item.template_id == 6" :items="item"></template6>
+      <template7 v-if="item.template_id == 7" :items="item"></template7>
+      <template8 v-if="item.template_id == 8" :items="item"></template8>
+      <template9 v-if="item.template_id == 9" :items="item"></template9>
+      <template10 v-if="item.template_id == 10" :items="item"></template10>
+      <template11 v-if="item.template_id == 11" :items="item"></template11>
+      <template12 v-if="item.template_id == 12" :items="item"></template12>
+      <template13 v-if="item.template_id == 13" :items="item"></template13>
+      <template14 v-if="item.template_id == 14" :items="item"></template14>
+      <template15 v-if="item.template_id == 15" :items="item"></template15>
+      <template16 v-if="item.template_id == 16" :items="item"></template16>
+      <template17 v-if="item.template_id == 17" :items="item"></template17>
     </div>
-
-    <template6 :items="template6Item"></template6>
+    <!-- <template6 :items="template6Item"></template6>
     <template7 :items="template7Item"></template7>
     <template8 :items="template8Item"></template8>
     <template9 :items="template9Item"></template9>
@@ -19,11 +30,13 @@
     <template14 :items="template14Item"></template14>
     <template15 :items="template15Item"></template15>
     <template16 :items="template16Item"></template16>
-    <template17 :items="template17Item"></template17>
+    <template17 :items="template17Item"></template17> -->
   </div>
 </template>
 
 <script>
+
+
 import banner from "./Banner.vue";
 import template2 from "./Template_2";
 import template3 from "./Template_3";
@@ -102,10 +115,10 @@ export default {
           template_id: 1,
           sort: 1,
           login_mode: true,
-          slot_name: "测试运营位",
+          slot_name: "Banner",
           type: true,
-          link_h5: "ds",
-          title_mode: 0
+          link_h5: "https://www.baidu.com",
+          title_mode: 2
         },
         {
           image:
@@ -254,10 +267,66 @@ export default {
           login_mode: true,
           slot_name: "icon每行5个",
           type: true,
-          link_h5: "ds",
+          link_h5: "",
+          title_mode: 2
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 6,
+          sort: 1,
+          login_mode: true,
+          slot_name: "上1图下2图",
+          type: true,
+          link_h5: "https://www.baidu.com",
           title_mode: 2
         }
       ],
+      
       bannerItem: [
         {
           opsPic:

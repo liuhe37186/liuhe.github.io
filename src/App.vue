@@ -1,3 +1,4 @@
+
 <template>
   <div id="app">
     <router-view></router-view>
@@ -13,7 +14,6 @@
 //     // HelloWorld
 //   }
 // }
-
 </script>
 
 <style>
@@ -35,4 +35,5 @@ body {
   text-size-adjust: 100% !important;
   -moz-text-size-adjust: 100% !important;
 }
+
 </style>

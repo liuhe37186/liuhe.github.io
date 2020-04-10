@@ -1,11 +1,8 @@
 <template>
   <div>
-    <div>
-      <img v-if="items.title_mode == 1" class="title-image" :src="items.image">
-      <div v-else-if="items.title_mode == 2" class="title">{{items.slot_name}}</div>
-    </div>
+    <operationTitle :items="items"></operationTitle>
     <div class="temp3">
-      <div class="item" v-for="item in items.data" :key="item.id" @click="itemClick(item)">
+      <div class="item" v-for="(item,index) in items.data" :key="index" @click="itemClick(item)">
         <img class="image" :src="item.image"/>
         <div class="text">{{item.name}}</div>
       </div>
