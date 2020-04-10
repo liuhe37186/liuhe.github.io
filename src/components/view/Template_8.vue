@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div>temp8</div>
+    <operationTitle :items="items"></operationTitle>
     <div class="temp8">
       <!-- <img :src="items[0].opsPic"/> -->
-      <div class="top" @click="itemClick(items[0])">
-        <div class="image"></div>
+      <div class="top" @click="itemClick(items.data[0])">
+        <img class="image" :src="items.data[0].image"/>
       </div>
       <div class="bottom">
-        <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-          <div class="image"></div>
+        <div class="item" v-for="(item,index) in bottomItem" :key="index" @click="itemClick(item)">
+          <img class="image" :src="item.image"/>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@ export default {
   props: ["items"],
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      bottomItem: this.items.data.splice(1,4)
     };
   },
   methods: {
@@ -38,12 +38,12 @@ export default {
   margin-top: 10px;
 }
 .temp8 .top {
-  height: 206px;
-  padding: 15px;
+  height: 300px;
+  padding: 20px;
 }
 .temp8 .top .image{
   width: 100%;
-  height: 206px;
+  height: 300px;
   background-color: blue;
 }
 .temp8 .bottom {
@@ -56,9 +56,9 @@ export default {
   margin-top: 0px;
 }
 .temp8 .item .image {
-  width: 168.75px;
-  height: 168.75px;
-  background-color: red;
-  margin-left: 15px;
+  width: 162.5px;
+  height: 162.5px;
+  background-color: grey;
+  margin-left: 20px;
 }
 </style>

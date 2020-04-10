@@ -38,8 +38,8 @@ export default {
   margin-top: 10px;
 }
 .temp6 .top {
-  height: 206px;
-  padding: 15px;
+  height: 300px;
+  padding: 20px;
 }
 .temp6 .top .image{
   width: 100%;
@@ -55,9 +55,9 @@ export default {
   margin-top: 0px;
 }
 .temp6 .item .image {
-  width: 352.5px;
-  height: 170px;
-  background-color: red;
-  margin-left: 15px;
+  width: 345px;
+  height: 230px;
+  background-color: gray;
+  margin-left: 20px;
 }
 </style>

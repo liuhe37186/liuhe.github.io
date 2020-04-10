@@ -38,15 +38,16 @@ export default {
   margin-top: 20px;
 }
 .temp3 .item .image {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   /* background-color: red; */
   /* border-radius: 40px; */
 }
 .temp3 .item .text {
   /* width: 80px; */
   text-align: center;
-  font-size: 28px;
-  margin-top: 22px;
+  font-size: 24px;
+  margin-top: 29px;
+  color: #333333;
 }
 </style>

@@ -81,6 +81,256 @@ export default {
           data: [
             {
               image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/conline-test/banner.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-ops-20190213-1257840667.cos.ap-beijing.myqcloud.com/images/brand/67d8bc28-ab3b-406f-b729-0a1fae4ab7a1.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 1,
+          sort: 1,
+          login_mode: true,
+          slot_name: "Banner",
+          type: true,
+          link_h5: "https://www.baidu.com",
+          title_mode: 0
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/mddh.png",
+              link_mp: "d",
+              name: "精选课程",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/zjjs.png",
+              link_mp: "d",
+              name: "老人风采",
+              id: 11,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/ksyy.png",
+              link_mp: "d",
+              name: "精彩资讯",
+              id: 12,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/twzx.png",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/qmyx.png",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/mrzj.png",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 17,
+          link_mp: "d",
+          template_id: 2,
+          sort: 1,
+          login_mode: true,
+          slot_name: "icon每行4个",
+          type: true,
+          link_h5: "ds",
+          title_mode: 0
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/mddh.png",
+              link_mp: "d",
+              name: "数据位",
+              id: 13,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/zjjs.png",
+              link_mp: "d",
+              name: "测试数位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/ksyy.png",
+              link_mp: "d",
+              name: "数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/twzx.png",
+              link_mp: "d",
+              name: "测数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/mrzj.png",
+              link_mp: "d",
+              name: "数据位",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "http://mbybo500.tkhealthcare.com/static/images/baibo/twzx.png",
+              link_mp: "d",
+              name: "测试数",
+              id: 14,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 18,
+          link_mp: "d",
+          template_id: 3,
+          sort: 1,
+          login_mode: true,
+          slot_name: "icon每行5个",
+          type: true,
+          link_h5: "",
+          title_mode: 2
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/conline-test/banner.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/conline-test/banner.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 6,
+          sort: 1,
+          login_mode: true,
+          slot_name: "上1图下2图",
+          type: true,
+          link_h5: "https://www.baidu.com",
+          title_mode: 2
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
                 "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
               link_mp: "d",
               name: "测试数据位",
@@ -108,14 +358,24 @@ export default {
               sort: 1,
               login_mode: true,
               link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
             }
           ],
           slot_id: 16,
           link_mp: "d",
-          template_id: 1,
+          template_id: 7,
           sort: 1,
           login_mode: true,
-          slot_name: "Banner",
+          slot_name: "上1图下3图",
           type: true,
           link_h5: "https://www.baidu.com",
           title_mode: 2
@@ -128,7 +388,37 @@ export default {
               image:
                 "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
               link_mp: "d",
-              name: "精选课程",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
               id: 10,
               sort: 1,
               login_mode: true,
@@ -138,134 +428,19 @@ export default {
               image:
                 "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
               link_mp: "d",
-              name: "老人风采",
-              id: 11,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "精彩资讯",
-              id: 12,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
               name: "测试数据位",
-              id: 8,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 8,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 8,
+              id: 10,
               sort: 1,
               login_mode: true,
               link_h5: "ds"
             }
           ],
-          slot_id: 17,
+          slot_id: 16,
           link_mp: "d",
-          template_id: 2,
+          template_id: 8,
           sort: 1,
           login_mode: true,
-          slot_name: "icon每行4个",
-          type: true,
-          link_h5: "ds",
-          title_mode: 1
-        },
-        {
-          image:
-            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-          data: [
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 13,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 14,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 14,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 14,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 14,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            },
-            {
-              image:
-                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
-              link_mp: "d",
-              name: "测试数据位",
-              id: 14,
-              sort: 1,
-              login_mode: true,
-              link_h5: "ds"
-            }
-          ],
-          slot_id: 18,
-          link_mp: "d",
-          template_id: 3,
-          sort: 1,
-          login_mode: true,
-          slot_name: "icon每行5个",
+          slot_name: "上1图下4图",
           type: true,
           link_h5: "",
           title_mode: 2
@@ -317,12 +492,142 @@ export default {
           ],
           slot_id: 16,
           link_mp: "d",
-          template_id: 6,
+          template_id: 8,
           sort: 1,
           login_mode: true,
-          slot_name: "上1图下2图",
+          slot_name: "上1图下3图",
           type: true,
           link_h5: "https://www.baidu.com",
+          title_mode: 2
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 12,
+          sort: 1,
+          login_mode: true,
+          slot_name: "上1图下多图",
+          type: true,
+          link_h5: "",
+          title_mode: 2
+        },
+        {
+          image:
+            "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+          data: [
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 7,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 8,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 9,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            },
+            {
+              image:
+                "https://tk-conline-20190225-1257840667.cos.ap-beijing.myqcloud.com/appointment/1585809292817431.jpg",
+              link_mp: "d",
+              name: "测试数据位",
+              id: 10,
+              sort: 1,
+              login_mode: true,
+              link_h5: "ds"
+            }
+          ],
+          slot_id: 16,
+          link_mp: "d",
+          template_id: 9,
+          sort: 1,
+          login_mode: true,
+          slot_name: "左1图右2图",
+          type: true,
+          link_h5: "",
           title_mode: 2
         }
       ],

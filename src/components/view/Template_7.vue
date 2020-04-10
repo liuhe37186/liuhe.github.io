@@ -1,15 +1,13 @@
 <template>
   <div>
-    <div>temp7</div>
-
+   <operationTitle :items="items"></operationTitle>
     <div class="temp7">
-      <!-- <img :src="items[0].opsPic"/> -->
-      <div class="top" @click="itemClick(items[0])">
-        <div class="image"></div>
+      <div class="top" @click="itemClick(items.data[0])">
+        <img class="image" :src="items.data[0].image"/>
       </div>
       <div class="bottom">
-        <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-          <div class="image"></div>
+        <div class="item" v-for="(item,index) in bottomItem" :key="index" @click="itemClick(item)">
+          <img class="image" :src="item.image"/>
         </div>
       </div>
     </div>
@@ -22,7 +20,7 @@ export default {
   props: ["items"],
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      bottomItem: this.items.data.splice(1,3)
     };
   },
   methods: {
@@ -39,8 +37,8 @@ export default {
   margin-top: 10px;
 }
 .temp7 .top {
-  height: 206px;
-  padding: 15px;
+  height: 300px;
+  padding: 20px;
 }
 .temp7 .top .image{
   width: 100%;
@@ -57,9 +55,9 @@ export default {
   margin-top: 0px;
 }
 .temp7 .item .image {
-  width: 230px;
-  height: 230px;
-  background-color: red;
-  margin-left: 15px;
+  width: 223.3px;
+  height: 223.3px;
+  background-color: grey;
+  margin-left: 20px;
 }
 </style>

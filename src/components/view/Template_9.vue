@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div>temp9</div>
-
+    <operationTitle :items="items"></operationTitle>
     <div class="temp9">
-      <!-- <img :src="items[0].opsPic"/> -->
-      <div class="left" @click="itemClick(items[0])"></div>
+      <div class="left" @click="itemClick(items[0])">
+        <img class="image" :src="items.data[0].image"/>
+      </div>
       <div class="right">
-        <div class="item" v-for="item in rightItem" :key="item.id" @click="itemClick(item)">
-          <div class="image"></div>
+        <div class="right-container" v-for="(item,index) in rightItem" :key="index" @click="itemClick(item)">
+          <img class="image" :src="item.image" />
         </div>
       </div>
-    </div>
+     </div>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   props: ["items"],
   data() {
     return {
-      rightItem: this.items.splice(1)
+      rightItem: this.items.data.splice(1,2)
     };
   },
   methods: {
@@ -34,31 +34,31 @@ export default {
 <style>
 .temp9 {
   width: 100%;
-  /* margin-top: 1px; */
+  height: 475px;
   display: flex;
   flex-direction: row;
 }
-.temp9 .left {
-  width: 405px;
-  height: 505px;
-  /* margin: 15px; */
-  margin-left: 15px;
-  margin-top: 15px;
-  background-color: blue;
+.temp9 .left .image{
+  width: 345px;
+  height: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: grey;
 }
 .temp9 .right {
-  /* display: inline; */
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
-.temp9 .item {
-  margin-top: 0px;
+.temp9 .right .right-container{
+  background-color: white;
+  
 }
-.temp9 .item .image {
-  width: 300px;
-  height: 245px;
-  background-color: red;
-  margin-left: 15px;
-  margin-top: 15px;
+
+.temp9 .right .right-container .image {
+  width: 345px;
+  height: 227.5px;
+  background-color: grey;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: block;
 }
 </style>

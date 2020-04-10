@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div>temp12</div>
+    <operationTitle :items="items"></operationTitle>
     <div class="temp12">
-      <div class="top" @click="itemClick(items[0])">
-        <div class="image"></div>
+      <div class="top" @click="itemClick(items.data[0])">
+        <img class="image" :src="items.data[0].image"/>
       </div>
       <div class="bottom">
         <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
-          <goods2 :goods="item"></goods2>
-          <!-- <div class="image">{{item.id}}</div> -->
+          <!-- <goods2 :goods="item"></goods2> -->
+          <img class="image" :src="item.image"/>
         </div>
       </div>
     </div>
@@ -16,15 +16,15 @@
 </template>
 
 <script>
-import goods2 from "./Goods_2";
+// import goods2 from "./Goods_2";
 
 export default {
   name: "template_10",
   props: ["items"],
-  components: { goods2 },
+  // components: { goods2 },
   data() {
     return {
-      bottomItem: this.items.splice(1)
+      bottomItem: this.items.data.splice(1)
     };
   },
   methods: {
@@ -40,12 +40,12 @@ export default {
   width: 100%;
 }
 .temp12 .top {
-  height: 206px;
-  padding: 15px;
+  /* height: 206px; */
+  padding: 20px;
 }
 .temp12 .top .image{
   width: 100%;
-  height: 206px;
+  height: 300px;
   background-color: blue;
 }
 .temp12 .bottom {
@@ -56,7 +56,12 @@ export default {
 }
 .temp12 .bottom .item {
   margin-top: 0px;
-  width: 200px;
-  margin-left: 15px;
+}
+
+.temp12 .item .image {
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+  margin-left: 20px;
 }
 </style>

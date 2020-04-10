@@ -21,7 +21,7 @@ export default {
       showMore(){
         console.log("link_h5",this.items.link_h5)
         console.log("name",this.items.slot_name)
-        if(this.items.link_h5 && this.items.slot_name){
+        if(this.items.link_h5 && this.items.slot_name && this.items.title_mode == 2){
           return true;
         }else{
           return false;
@@ -33,14 +33,17 @@ export default {
 
 <style>
 .title-image{
+  margin-top: 20px;
   height: 50px;
   width: 100%;
 }
 .title-container{
   display: flex;
+  /* padding-top: 20px; */
 }
 .title-text{
   width: 80%;
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
   text-align: left;
@@ -51,6 +54,7 @@ export default {
 }
 
 .more-container{
+  margin-top: 20px;
   display: flex;
   width: 20%;
   flex-direction: row-reverse; 

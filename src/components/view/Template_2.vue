@@ -42,8 +42,8 @@ export default {
   margin-top: 20px;
 }
 .temp2 .item .image {
-  width: 104px;
-  height: 104px;
+  width: 80px;
+  height: 80px;
   /* margin-left: 66.8px; */
   /* background-color: red; */
   /* border-radius: 52px; */
@@ -51,7 +51,8 @@ export default {
 .temp2 .item .text {
   /* width: 104px; */
   text-align: center;
-  font-size: 28px;/*px*/
-  margin-top: 22px;
+  font-size: 26px;
+  margin-top: 17px;
+  color: #333333;
 }
 </style>
