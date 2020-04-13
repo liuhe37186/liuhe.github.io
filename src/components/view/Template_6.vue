@@ -44,7 +44,8 @@ export default {
 .temp6 .top .image{
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: grey;
+  display: block;
 }
 .temp6 .bottom {
   display: flex;
@@ -57,7 +58,7 @@ export default {
 .temp6 .item .image {
   width: 345px;
   height: 230px;
-  background-color: gray;
+  background-color: grey;
   margin-left: 20px;
 }
 </style>

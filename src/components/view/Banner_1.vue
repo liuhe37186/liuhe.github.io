@@ -1,11 +1,6 @@
 <template>
   <div class="banner1">
-    <div class="banner-img"></div>
-    <div class="banner-text">
-      <div>艺术课程|家庭艺术插花课</div>
-      <div>让我们的家园像花儿一样灿烂</div>
-      
-    </div>
+    <img class="banner-img" :src="banner.image"/>
   </div>
 </template>
 
@@ -21,14 +16,9 @@ export default {
   /* width: 352.5px; */
 }
 .banner1 .banner-img {
-  width: 500px;
-  height: 300px;
+  width: 580px;
+  height: 270px;
   background-color: red;
 }
 
-.banner1 .banner-text{
-    width: 500px;
-    text-align: left;
-    font-size: 28px;/*px*/
-}
 </style>

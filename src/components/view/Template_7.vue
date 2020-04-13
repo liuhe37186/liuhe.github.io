@@ -43,7 +43,8 @@ export default {
 .temp7 .top .image{
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: grey;
+  display: block;
 }
 .temp7 .bottom {
   height: 230px;

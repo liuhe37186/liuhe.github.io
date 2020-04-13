@@ -1,11 +1,6 @@
 <template>
   <div class="banner2">
-    <div class="banner-img"></div>
-    <div class="banner-text">
-      <div>艺术</div>
-      <div>像花儿一样灿烂</div>
-      
-    </div>
+    <img class="banner-img" :src="banner.image"/>
   </div>
 </template>
 
@@ -21,14 +16,9 @@ export default {
   /* width: 352.5px; */
 }
 .banner2 .banner-img {
-  width: 280px;
-  height: 280px;
-  background-color: red;
+  width: 258px;
+  height: 300px;
+  background-color: grey;
 }
 
-.banner2 .banner-text{
-    width: 280px;
-    text-align: left;
-    font-size: 28px;/*px*/
-}
 </style>

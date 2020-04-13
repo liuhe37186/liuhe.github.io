@@ -6,7 +6,7 @@
         <img class="image" :src="items.data[0].image"/>
       </div>
       <div class="bottom">
-        <div class="item" v-for="item in bottomItem" :key="item.id" @click="itemClick(item)">
+        <div class="item" v-for="(item,index) in bottomItem" :key="index" @click="itemClick(item)">
           <!-- <goods2 :goods="item"></goods2> -->
           <img class="image" :src="item.image"/>
         </div>
@@ -46,7 +46,7 @@ export default {
 .temp12 .top .image{
   width: 100%;
   height: 300px;
-  background-color: blue;
+  background-color: grey;
 }
 .temp12 .bottom {
   display: flex;
@@ -63,5 +63,6 @@ export default {
   height: 250px;
   background-color: grey;
   margin-left: 20px;
+  display: block;
 }
 </style>

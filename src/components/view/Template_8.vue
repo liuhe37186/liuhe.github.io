@@ -44,7 +44,7 @@ export default {
 .temp8 .top .image{
   width: 100%;
   height: 300px;
-  background-color: blue;
+  background-color: grey;
 }
 .temp8 .bottom {
   height: 168.75px;

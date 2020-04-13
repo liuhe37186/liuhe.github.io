@@ -48,7 +48,7 @@ export default {
 .temp11 .top .image{
   width: 100%;
   height: 206px;
-  background-color: blue;
+  background-color: grey;
 }
 .temp11 .bottom {
   display: flex;

@@ -19,6 +19,10 @@ export default {
   methods:{
       itemClick(item){
           console.log("点击 temp2 Item", item.id);
+          // let url = "router"
+          let param = { articleId: 1 };
+          // this.$router.push({ path: url, query: param });
+          // window.location.href = "http://localhost:8080/vue-demo/#/router"
       }
   }
 };

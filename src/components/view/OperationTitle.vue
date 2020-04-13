@@ -1,9 +1,9 @@
 <template>
     <div class="title-container">
-      <img v-if="items.title_mode == 1" class="title-image" :src="items.image">
+      <img v-if="items.title_mode == 1" class="title-image" :src="items.image" @click="moreClick(items)">
       <div v-else-if="items.title_mode == 2" class="title-text">{{items.slot_name}}</div>
-      <div v-if="showMore()" class="more-container">
-        <img src="../../assets/img/more.png" class="more-image">
+      <div v-if="showMore()" class="more-container" >
+        <img src="../../assets/img/more.png" class="more-image" @click="moreClick(items)">
         <div class="more">更多</div>
       </div>
     </div>
@@ -15,8 +15,9 @@ export default {
   name: "operationTitle",
   props: ["items"],
   methods:{
-      itemClick(item){
-          console.log("点击 title Item", item.id);
+      moreClick(items){
+          console.log("点击 title Item", items.link_h5);
+          window.location.href = items.link_h5;
       },
       showMore(){
         console.log("link_h5",this.items.link_h5)
@@ -59,17 +60,18 @@ export default {
   width: 20%;
   flex-direction: row-reverse; 
   padding-right: 15px;
+  align-items: center;
 }
 .more{
   text-align: right;
-  align-items: center;
-  margin: auto 0;
+  /* align-items: center; */
+  /* margin: auto 0; */
   color: #666666
 }
 .more-image{
   width: 40px;
   height: 40px;
-  align-items: center;
-  margin: auto 0;
+  /* align-items: center; */
+  /* margin: auto 0; */
 }
 </style>

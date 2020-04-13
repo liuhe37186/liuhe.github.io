@@ -40,7 +40,7 @@ export default {
   width: 720px;
   height: 206px;
   margin: 15px;
-  background-color: blue;
+  background-color: grey;
 }
 .temp14 .bottom {
   display: flex;

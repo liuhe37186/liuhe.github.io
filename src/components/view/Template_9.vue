@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="temp9-container">
     <operationTitle :items="items"></operationTitle>
     <div class="temp9">
       <div class="left" @click="itemClick(items[0])">
@@ -32,9 +32,13 @@ export default {
 </script>
 
 <style>
+.temp9-container{
+  display: block;
+}
 .temp9 {
   width: 100%;
   height: 475px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
 }

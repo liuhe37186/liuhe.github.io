@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div>temp16</div>
+   <operationTitle :items="items"></operationTitle>
     <div class="temp16">
       <!-- <div class="top" @click="itemClick(items[0])"></div> -->
       <div class="bottom">
-        <div class="item" v-for="item in items" :key="item.id" @click="itemClick(item)">
-          <banner2 :goods="item"></banner2>
+        <div class="item" v-for="item in items.data" :key="item.id" @click="itemClick(item)">
+          <banner2 :banner="item"></banner2>
           <!-- <div class="image">{{item.id}}</div> -->
         </div>
       </div>
@@ -41,18 +41,19 @@ export default {
   width: 720px;
   height: 206px;
   margin: 15px;
-  background-color: blue;
+  background-color: grey;
 }
 .temp16 .bottom {
   width: 100%;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
+  margin-top: 20px;
   /* flex-wrap: wrap; */
 }
 .temp16 .bottom .item {
   margin-top: 0px;
-  width: 280px;
+  width: 258px;
   margin-left: 15px;
 }
 </style>
